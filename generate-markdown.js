@@ -1,7 +1,7 @@
 // function to generate markdown
 function generateMarkdown (data) {
-    return `#${data.title} 
-    ### Description
+    return `#<h1>${data.title}<h1>
+    <h3>Description<h3>
     ${data.description}
 
     ### Table of Contents
