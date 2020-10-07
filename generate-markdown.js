@@ -1,10 +1,10 @@
 // function to generate markdown
 function generateMarkdown (data) {
-    return `#<h1>${data.title}<h1>
+    return `<h1>${data.title}<h1>
     <h3>Description<h3>
     ${data.description}
 
-    ### Table of Contents
+    <h3>Table of Contents<h3>
     * Installation
     * Usage
     * License
@@ -12,23 +12,23 @@ function generateMarkdown (data) {
     * Tests
     * Questions
     
-    ### Installation
+    <h3>Installation<h3>
     ${data.installation}
 
-    ### Usage
+    <h3>Usage<h3>
     ${data.usage}
 
-    ### License
+    <h3>License<h3>
     ${data.license}
 
-    ### Contributing
+    <h3>Contributing<h3>
     ${data.contributing}
 
-    ### Tests
+    <h3>Tests</h3>
     ${data.tests}
 
-    ### Questions
-    GitHub Profile: https://github.com/${data.github}.
+    <h3>Questions<h3>
+    GitHub Profile: <a href ="https://github.com/${data.github}">https://github.com/${data.github}</a> .
     If you have any further questions, you can contact me through email at ${data.email}.
     
     

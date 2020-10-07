@@ -2,13 +2,13 @@
 const inquirer = require("inquirer");
 const open = require("open");
 const fs = require("fs");
-const util = require("util"); 
+const util = require("util");
+const pkg = require('badges');
 const generateMarkdown = require("./generate-markdown.js");
-const writeAsync = util.promisify(fs.writeFile);                    
+const writeAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
-const questions = [
-    {
+const questions = [{
         message: "What is your GitHub username?",
         name: "github"
     },
@@ -47,9 +47,8 @@ const questions = [
 
 
 
+
 ];
-
-
 
 // function to initialize program
 async function init() {
@@ -58,10 +57,12 @@ async function init() {
 
     // generate html
     const html = generateMarkdown(answers);
-   
+
     // save to file
-    await writeAsync(answers.title + ".md", html);
+    await writeAsync(answers.title + "-README.md", html);
 }
 
 // function to call initialize program
 init();
+
+
