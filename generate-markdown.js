@@ -1,34 +1,54 @@
+// function to get license
+// let licenseText = "";
+
+function getLicense(license) {
+    if (license === "MIT") {
+        data.license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)"
+        // licenseText = "MIT license"
+    } else if (license === "Apache 2.0") {
+        data.license = "[![License](https://img.shields.io/badge/License-Apache%202.0-green)](https://opensource.org/licenses/Apache-2.0)"
+        // licenseText = "Apache 2.0 license"
+    }
+};
+
+// Call function
+getLicense();
+
 // function to generate markdown
-function generateMarkdown (data) {
-    return `<h1>${data.title}<h1>
-    <h3>Description<h3>
-    <h5>${data.description}</h5>
-    <h3>Table of Contents<h3>
-    <ul>
-       <li> * <a href="https://github.com/amyventura/readme-generator/blob/master/smdfghjkwjg-README.md#installation">Installation</a></li>
-       <li> * <a href="https://github.com/amyventura/readme-generator/blob/master/smdfghjkwjg-README.md#usage">Usage</a></li>
-       <li> * <a href="https://github.com/amyventura/readme-generator/blob/master/smdfghjkwjg-README.md#license">License</a></li>
-       <li> * <a href="https://github.com/amyventura/readme-generator/blob/master/smdfghjkwjg-README.md#contributing">Contributing</a></li>
-       <li> * <a href="https://github.com/amyventura/readme-generator/blob/master/smdfghjkwjg-README.md#tests">Tests</a></li>
-       <li> * <a href="https://github.com/amyventura/readme-generator/blob/master/smdfghjkwjg-README.md#questions">Questions</a></li>
-    </ul>
-    <h3>Installation</h3>
-    <h5>${data.installation}</h5>
-    <h3>Usage</h3>
-    <h5>${data.usage}</h5>
-    <h3>License</h3>
-    <h5>${data.license}</h5>
-    <h3>Contributing</h3>
-    <h5>${data.contributing}</h5>
-    <h3>Tests</h3>
-    <h5>${data.tests}</h5>
-    <h3>Questions</h3>
-    <h5>GitHub Profile: <a href ="https://github.com/${data.github}">https://github.com/${data.github}.</a></h5>
-    <h5>If you have any further questions, you can contact me through email at <a href="#">${data.email}.</h5>
-    
-    
-    
-    `
+function generateMarkdown(data) {
+    return `
+# ${data.title}
+${data.license}
+
+## Description
+${data.description}.
+
+## Table of Contents
+
+* [Installation] (#installation)
+* [Usage] (#usage)
+* [License] (#license)
+* [Contributing] (#contributing)
+* [Tests] (#tests)
+* [Questions] (#questions)
+
+## Installation
+${data.installation}.
+
+## Usage
+${data.usage}.
+
+## Contributing
+${data.contributing}.
+
+## Tests
+Testing framework used: ${data.tests}.
+
+## Questions
+GitHub Profile: https://github.com/${data.github}. 
+If you have any further questions, you can contact me through email at ${data.email}.
+
+`
 }
 
 module.exports = generateMarkdown;
