@@ -3,25 +3,25 @@
 MIT
 
 ## Description
-A command-line application that generates a professional README.md from a user's input using the Iquirer package
+A command-line application that generates a professional README.md with user's input using Inquirer package.
 
 ## Table of Contents
 
-* [Installation] (#installation)
-* [Usage] (#usage)
-* [License] (#license)
-* [Contributing] (#contributing)
-* [Tests] (#tests)
-* [Questions] (#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation
-Run "npm install" in the terminal
+Run "npm install" in terminal.
 
 ## Usage
-You must have Node.js installed in order to use this application
+Must have Node.js installed in order to use the application.
 
 ## Contributing
-This project welcomes contributions and suggestions
+This project welcomes contributions and suggestions.
 
 ## Tests
 Testing framework used: None.
