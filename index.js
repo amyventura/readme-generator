@@ -45,6 +45,11 @@ const questions = [{
         type: "input"
     },
     {
+    message: "Please list the technologies used in your project.",
+    name: "technologies",
+    type: "input"
+    },
+    {
         message: "What does the user need to know about contributing to your project?",
         name: "contributing",
         type: "input"

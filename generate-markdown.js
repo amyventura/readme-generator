@@ -27,7 +27,7 @@ ${data.description}.
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [License](#license)
+* [Technologies](#Technologies)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
@@ -37,6 +37,9 @@ ${data.installation}.
 
 ## Usage
 ${data.usage}.
+
+## Technologies
+${data.technologies}.
 
 ## Contributing
 ${data.contributing}.
